@@ -8,47 +8,46 @@ import (
 	"strings"
 )
 
-func arraySchoolCalc(n int, arr []int) []int {
-	if arr == nil {
-		return nil
+func arraySchoolCalc(n int, nums []int) {
+	if nums == nil {
+		return
 	}
 	if n == 1 {
-		return arr
+		return
 	}
 	left := 0
 	right := 1
 	for left < n && right < n {
-		if arr[left] == 0 && arr[right] != 0 {
-			t := arr[right]
-			arr[left] = t
-			arr[right] = 0
+		if nums[left] == 0 && nums[right] != 0 {
+			t := nums[right]
+			nums[left] = t
+			nums[right] = 0
 			left++
 			right++
 			continue
 		}
-		if arr[left] == 0 && arr[right] == 0 {
+		if nums[left] == 0 && nums[right] == 0 {
 			right++
 			continue
 		}
 		left++
 		right++
 	}
-	return arr
 }
 
 func ArraySchool() {
 	reader := bufio.NewReader(os.Stdin)
 	nStr, _ := reader.ReadString('\n')
-	arrStr, _ := reader.ReadString('\n')
-	strNumbers := strings.Fields(arrStr)
-	var arr []int
-	for _, str := range strNumbers {
+	numsStr, _ := reader.ReadString('\n')
+	numsParts := strings.Fields(numsStr)
+	var nums []int
+	for _, str := range numsParts {
 		num, _ := strconv.Atoi(str)
-		arr = append(arr, num)
+		nums = append(nums, num)
 	}
 	n, _ := strconv.Atoi(strings.TrimSpace(nStr))
-	arr = arraySchoolCalc(n, arr)
-	for i, v := range arr {
+	arraySchoolCalc(n, nums)
+	for i, v := range nums {
 		if i > 0 {
 			fmt.Print(" ")
 		}
@@ -57,5 +56,7 @@ func ArraySchool() {
 }
 
 func ArraySchoolTests() {
-	fmt.Printf("%v", arraySchoolCalc(6, []int{0, 0, 6, 0, 9, 8}))
+	a1 := []int{0, 0, 6, 0, 9, 8}
+	arraySchoolCalc(6, a1)
+	fmt.Printf("%v", a1)
 }
