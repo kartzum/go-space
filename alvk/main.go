@@ -1,6 +1,7 @@
 package main
 
 func main() {
-	ArraySchoolTests()
+	//ArraySchoolTests()
 	//ArrayRemove()
+	ArrayMax()
 }
