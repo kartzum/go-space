@@ -6,5 +6,6 @@ func main() {
 	//ArrayMax()
 	//SingleLinkedListTests()
 	//ListNCalcTest()
-	ListNCalc()
+	//ListNCalc()
+	LastEven()
 }
