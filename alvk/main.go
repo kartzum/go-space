@@ -7,5 +7,7 @@ func main() {
 	//SingleLinkedListTests()
 	//ListNCalcTest()
 	//ListNCalc()
-	LastEven()
+	//LastEven()
+	//BinarySearchTest()
+	BinarySearch()
 }
