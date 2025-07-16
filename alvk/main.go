@@ -9,5 +9,7 @@ func main() {
 	//ListNCalc()
 	//LastEven()
 	//BinarySearchTest()
-	BinarySearch()
+	//BinarySearch()
+	//ExponentialSearchTest()
+	ExponentialSearch()
 }
