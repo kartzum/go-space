@@ -10,6 +10,7 @@ func main() {
 	//LastEven()
 	//BinarySearchTest()
 	//BinarySearch()
-	//ExponentialSearchTest()
-	ExponentialSearch()
+	ExponentialSearchTest()
+	//ExponentialSearch()
+	//BubbleSort2()
 }
