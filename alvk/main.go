@@ -1,16 +1,18 @@
 package main
 
 func main() {
-	//ArraySchoolTests()
+	//ArraySchoolTest()
 	//ArrayRemove()
 	//ArrayMax()
-	//SingleLinkedListTests()
+	//SingleLinkedListTest()
 	//ListNCalcTest()
 	//ListNCalc()
 	//LastEven()
 	//BinarySearchTest()
 	//BinarySearch()
-	ExponentialSearchTest()
+	//ExponentialSearchTest()
 	//ExponentialSearch()
 	//BubbleSort2()
+	//MajorityElementTest()
+	MajorityElement()
 }

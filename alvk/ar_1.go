@@ -55,7 +55,7 @@ func ArraySchool() {
 	}
 }
 
-func ArraySchoolTests() {
+func ArraySchoolTest() {
 	a1 := []int{0, 0, 6, 0, 9, 8}
 	arraySchoolCalc(6, a1)
 	fmt.Printf("%v", a1)

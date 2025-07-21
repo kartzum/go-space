@@ -67,7 +67,7 @@ func singleLinkedListReverseTest() {
 	list.For(func(data interface{}) { fmt.Println(data) })
 }
 
-func SingleLinkedListTests() {
+func SingleLinkedListTest() {
 	//singleLinkedListAddTest()
 	singleLinkedListReverseTest()
 }
